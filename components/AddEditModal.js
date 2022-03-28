@@ -77,7 +77,7 @@ export default function AddEditModal({ isOpen = false, onClose }) {
     };
 
     getCountries();
-  }, []);
+  }, [singleMember]);
 
   const handleSubmit = (e) => {
     e.preventDefault();

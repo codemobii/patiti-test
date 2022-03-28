@@ -65,7 +65,10 @@ export default function Dashboard() {
   return (
     <DashboardLayout>
       <Grid templateColumns="repeat(5, 1fr)" gap={6}>
-        <GridItem transition={"all 0.3s ease"} colSpan={showDetails ? 3 : 5}>
+        <GridItem
+          transition={"all 0.3s ease"}
+          colSpan={singleMember && showDetails ? 3 : 5}
+        >
           <Stack overflowY={"hidden"} w="100%">
             <HStack pt="20px">
               <Input
